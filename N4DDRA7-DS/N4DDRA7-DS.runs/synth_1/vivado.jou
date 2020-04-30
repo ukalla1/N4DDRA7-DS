@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Apr 29 19:08:25 2020
+# Process ID: 16164
+# Current directory: /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.runs/synth_1
+# Command line: vivado -log ds_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ds_top_wrapper.tcl
+# Log file: /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.runs/synth_1/ds_top_wrapper.vds
+# Journal file: /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ds_top_wrapper.tcl -notrace

@@ -1,0 +1,3 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+$finish called at time : 1000020 ns : File "/home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sim_1/new/ds_top_wrapper_tb.v" Line 62

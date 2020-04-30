@@ -50,8 +50,8 @@ module ds_top_wrapper_tb(
     
     initial begin
         rst = 1'b1;
-        freq_select = 2'b00;
-        wave_select = 2'b01;
+        freq_select = 2'b10;
+        wave_select = 2'b10;
         
         #(2 * period);
         

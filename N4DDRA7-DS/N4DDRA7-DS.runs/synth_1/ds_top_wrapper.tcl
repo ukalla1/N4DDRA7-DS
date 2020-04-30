@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,13 +29,12 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/PWM_audio.v
-  /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/PWM_driver.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/ds_top.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/freq_sel.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/freq_sel_wrapper.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/mux.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/mux2_1.v
+  /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/rc_tp_dac.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/saw_wave.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/sqw_wave.v
   /home/ukallakuri/hardware_design/designs/N4DDRA7-DS/N4DDRA7-DS/N4DDRA7-DS.srcs/sources_1/new/tri_wave.v

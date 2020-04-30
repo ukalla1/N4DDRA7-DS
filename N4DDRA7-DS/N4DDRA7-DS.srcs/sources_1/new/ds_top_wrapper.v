@@ -1,24 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
 // 
-// Create Date: 04/29/2020 06:21:34 PM
-// Design Name: 
-// Module Name: ds_top_wrapper
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Engineer: Uttej Kallakuri 
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module ds_top_wrapper(
     input clk,
@@ -38,10 +23,17 @@ module ds_top_wrapper(
         .wave_s(wave_f_gen)
     );
     
-    PWM_audio gen_aud(
+//    PWM_audio gen_aud(
+//        .clk(clk),
+//        .rst(rst),
+//        .wave_in(wave_f_gen),
+//        .pwm_out(AUD_PWM)
+//    );
+
+    rc_tp_dac tp_dac(
         .clk(clk),
         .rst(rst),
-        .wave_in(wave_f_gen),
+        .pwm_in(wave_f_gen),
         .pwm_out(AUD_PWM)
     );
 endmodule

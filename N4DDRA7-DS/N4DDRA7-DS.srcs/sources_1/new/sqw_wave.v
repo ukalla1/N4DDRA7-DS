@@ -24,7 +24,7 @@ module sqw_wave(
             flag        <= 1'b0;
         end
         else begin
-            if (counter < (cnt_val/2)) begin
+            if (counter < (cnt_val/32)) begin
                 counter <= counter + 1'b1;
                 flag    <= flag;
             end

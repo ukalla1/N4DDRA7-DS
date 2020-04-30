@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date             : Wed Apr 29 19:10:23 2020
+| Date             : Thu Apr 30 07:46:55 2020
 | Host             : ukallakuri-Lenovo-YOGA-910-13IKB running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file ds_top_wrapper_power_routed.rpt -pb ds_top_wrapper_power_summary_routed.pb -rpx ds_top_wrapper_power_routed.rpx
 | Design           : ds_top_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.101        |
+| Total On-Chip Power (W)  | 0.087        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.003        |
+| Device Static (W)        | 0.084        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        4 |       --- |             --- |
-| Slice Logic    |     0.001 |      469 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      219 |     63400 |            0.35 |
-|   CARRY4       |    <0.001 |       56 |     15850 |            0.35 |
-|   Register     |    <0.001 |      143 |    126800 |            0.11 |
+| Slice Logic    |     0.001 |      504 |       --- |             --- |
+|   LUT as Logic |     0.001 |      225 |     63400 |            0.35 |
+|   CARRY4       |    <0.001 |       63 |     15850 |            0.40 |
+|   Register     |    <0.001 |      159 |    126800 |            0.13 |
 |   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |     0.001 |      323 |       --- |             --- |
+| Signals        |     0.001 |      353 |       --- |             --- |
 | I/O            |    <0.001 |        7 |       210 |            3.33 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.101 |          |           |                 |
+| Static Power   |     0.084 |          |           |                 |
+| Total          |     0.087 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
 | Vccint    |       1.000 |     0.018 |       0.003 |      0.015 | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
@@ -141,7 +141,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| ds_top_wrapper |     0.004 |
+| ds_top_wrapper |     0.003 |
 |   dig_wave_gen |     0.003 |
 |     tw         |     0.002 |
 +----------------+-----------+

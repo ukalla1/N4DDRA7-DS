@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588201703">
-  <File Type="PA-TCL" Name="ds_top_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="ds_top_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ds_top_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="ds_top_wrapper_utilization_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588247085">
+  <File Type="VDS-TIMINGSUMMARY" Name="ds_top_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ds_top_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="ds_top_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ds_top_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="ds_top_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="ds_top_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="ds_top_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="ds_top_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="ds_top_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/PWM_audio.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/PWM_driver.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ds_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -57,6 +46,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/rc_tp_dac.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/saw_wave.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -80,6 +76,22 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ds_top_wrapper.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWM_audio.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWM_driver.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -16,8 +16,7 @@ Compiling module xil_defaultlib.saw_wave
 Compiling module xil_defaultlib.sqw_wave
 Compiling module xil_defaultlib.mux
 Compiling module xil_defaultlib.ds_top
-Compiling module xil_defaultlib.PWM_driver
-Compiling module xil_defaultlib.PWM_audio
+Compiling module xil_defaultlib.rc_tp_dac
 Compiling module xil_defaultlib.ds_top_wrapper
 Compiling module xil_defaultlib.ds_top_wrapper_tb
 Compiling module xil_defaultlib.glbl
